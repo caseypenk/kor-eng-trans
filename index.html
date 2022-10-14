@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="scripts.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>korean-english sentence diagrammer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+<body onload='initialize()'>
+	<div id="header">korean-english sentence diagrammer</div>
+	<div id="workspace">
+		<div id="translation"></div>
+		<div id="hanja"></div>
+		<textarea id="original" type="text" autofocus="autofocus" placeholder="enter korean text"></textarea>
+		<div id="original-divided"></div>
+	</div>
+	<div id="user-prefs">
+		<input type="checkbox" id="user-pref-taegukgi"><!--🇰🇷 Use 태극기 colors--></input><br />
+		<input type="checkbox" id="user-pref-hanja">show 한자</input><br />
+	</div>
+	<div id="loading-bar"></div>
+	<div id="footer">made by casey penk using the <a href="https://github.com/garfieldnate/kengdic">kengdic</a> dictionary</div>
+</body>
+</html>

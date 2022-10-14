@@ -1,0 +1,96 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+html, body, p, h1, div, textarea, input {
+	font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+a {
+	color: black;
+}
+
+img.emoji { /* Size in accordance with surrounding text, per https://github.com/twitter/twemoji */
+	height: 1em;
+	width: 1em;
+	margin: 0 .05em 0 .1em;
+	vertical-align: -0.1em;
+ }
+
+#header {
+	text-align: center;
+	font-size: 30px;
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+
+#workspace {
+	width: 100%;
+	padding: 20px; /* Leave space around the edges so content does not extend to edges of screen */
+	box-sizing: border-box; /* Allows for the content to fill all of the width of the screen after padding is removed - see https://stackoverflow.com/questions/5219175/width-100-padding */
+}
+
+#translation {
+	font-size: 12px; /* Smaller because English is wider than it is tall */
+	padding-bottom: 10px; /* Leave space at bottom because English has descenders that extend below lower limits of div */
+	min-height: 1px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.translated-word, .hanja-word {
+	text-align: center;
+	min-height: 1px;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+#original, #hanja {
+	font-size: 75px; /* Large to be user-friendly. This should scale downward in JS when more text is entered */
+	border: none; /* No border around text input box */
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#original-divided {
+	font-size: 75px;
+	height: 0;
+	display: block;
+	visibility: hidden;
+}
+
+.original-divided-character {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 0;
+}
+
+input {
+	margin: 5px;
+}
+
+textarea:focus, input:focus {
+	outline: none; /* Hide focus border around text input box */
+}
+
+#user-prefs, #loading-bar {
+	margin: 20px;
+}
+
+#user-pref-taegukgi {
+	visibility: hidden;
+}
+
+#footer {
+	text-align: center;
+	clear: both;
+}
+
+#footer-tooltip {
+	visibility: hidden;
+}
